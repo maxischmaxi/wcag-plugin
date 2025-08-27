@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "A11y Audit",
+    "version": "1.0.0",
+    "description": "DevTools-Panel für WCAG AA Checks mit axe-core.",
+    "devtools_page": "devtools.html",
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["lib/axe.min.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

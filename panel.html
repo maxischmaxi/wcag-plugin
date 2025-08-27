@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="panel.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>WCAG Audit</h1>
+        <div class="row">
+            <select id="wcag-select">
+                <option value="a">WCAG A</option>
+                <option value="aa" selected>WCAG AA</option>
+                <option value="aaa">WCAG AAA</option>
+            </select>
+            <button id="btn-run">Bericht ausführen</button>
+        </div>
+        <p class="muted" id="status"></p>
+        <div id="results"></div>
+        <script src="panel.js"></script>
+    </body>
+</html>
